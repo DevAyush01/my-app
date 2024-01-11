@@ -27,3 +27,5 @@ switch (Oper) {
         console.log("Data is not provided by the Admin");
 }
 
+
+var name = "jadu";
