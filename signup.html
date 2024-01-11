@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            background-image: url(thor.jpg);
+            background-size: cover;
+            background-position: fixed;
+        }
+        .title{
+            text-align: center;
+            padding: 50px 0 20px;
+        }
+        .title h1{
+            margin: 0%;
+            padding: 0%;
+            color: burlywood;
+            font-size: 32px;
+            text-transform: uppercase;
+        }
+        .container{
+            width: 50%;
+            height: 500px;
+            background: white;
+            margin: 0 auto;
+            border: 2px solid yellow;
+            background-color: rgba(0, 0,0,0.4);
+            overflow: hidden;
+        }
+        .left{
+            float: left;
+            width: 40%;
+            height: 500px;
+            background-color: aqua;
+            border-top-right-radius: 35px;
+            border-bottom-right-radius: 35px;
+            text-align: center; 
+            overflow: hidden;
+        }
+        .form{
+            text-align: center;
+        }
+        .left:hover{
+            transition-delay: 0s;
+            transition-duration: 2s;
+            transform: translate(20px);
+            background-color: rgba(255,255,255,0.2);
+        }       
+        .container:hover{
+            transition-delay: 0s;
+            transition-duration: 2s;
+            background-image: url(mountain.jpg);
+            background-size: cover;  
+            border-radius: 10px;  
+            height: 400px;
+            width: 45%;
+        }
+        .container:hover h2{
+            transition-delay: 0s;
+            transition-duration: 1s;
+            transform: translateY(50%);
+            color: violet;
+            font-size: 40px;
+        }
+        .name input{
+            margin-top: 40px;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: rgba(255,255,255,0);
+            color: #fffaf0;
+            outline: none;
+        }
+        .email input{
+            margin-top: 40px;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: rgba(255,255,255,0);
+            color: floralwhite;
+            outline: none;
+        }
+        .pass input{
+            margin-top: 40px;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: rgba(255,255,255,0);
+            color: floralwhite;
+            outline: none;
+        }
+        .conpass input{
+            margin-top: 40px;
+            border: none;
+            border-bottom: 1px solid white;
+            background-color: rgba(255,255,255,0);
+            color: floralwhite;
+            outline: none;
+        }
+        .check{
+            margin-top: 10px;
+            margin-bottom: 20px;
+            
+        }
+        .container:hover button{
+            transition-delay: 0s;
+            transition-duration: 2s;
+          padding: 0 80px;
+          color: yellow;
+          background-color: rgba(255,255,255,0);
+          border-radius: 4px;
+          border: 2px solid brown;
+        }
+        .check b{
+            color: blue;
+            font-weight: lighter;
+        }
+        .log p{
+            color: white;
+        }
+        .log a{
+            text-decoration: none;
+            color: aqua;
+        }
+        ::placeholder{
+            color: lime;
+        }
+        .text h4{
+            color: white;
+        }
+        .container:hover h4{
+            transition-delay: 0s;
+            transition-duration: 2s;
+            color: orangered;
+        }
+  </style>
+</head>
+<body>
+    <div class="title"><h1>Sign up</h1></div>
+    <div class="container">
+        <div class="left">
+          <div class="left2">
+            <h2>Welcome</h2>
+          </div>
+          <br>
+          <br>
+          <div class="text">
+            <h4>This is Signup Form for you</h4>
+          </div>
+        </div>
+     <div class="form">
+        <form action="">
+            <div class="name">
+                <input type="text" name="" id="" placeholder="Your name">
+            </div>
+           <div class="email">
+            <input type="text" name="" id="" placeholder="Email">
+           </div>
+           <div class="pass">
+            <input type="text" name="" id="" placeholder="Password">
+           </div>
+           <div class="conpass">
+            <input type="text" name="" id="" placeholder="confirm password">
+           </div>
+           <div class="check">
+            <input type="checkbox" name="" id=""> <b>I agree to terms & conditions</b>
+           </div>
+           <div class="sub">
+            <button type="submit">Signin</button>
+           </div>
+           <div class="log">
+            <p>Already have a account?<a href="loginpage.html">login</a></p>
+           </div>
+        </form>
+     </div>
+    </div>
+</body>
+</html>

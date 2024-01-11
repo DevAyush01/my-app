@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        .left{
+            float: left;
+            width: 50%;
+            height: 100vh;
+            background-color: yellow;
+        }
+        .right{
+            float: right;
+            width: 50%;
+            height: 100vh;
+            background-image: url(back.jpg);
+            background-size: cover;
+            text-align: center;
+        }
+        .box{
+            width: 50%;
+            height: 400px;
+            border: 1px solid brown;
+            margin: 100px auto;
+        }
+        .title{
+            margin: 40px 0;
+        }
+        .user{
+            margin-bottom: 30px;
+        }
+        .pass{
+            margin-bottom: 30px;
+        }
+        .button{
+            margin: 10px;
+        }
+        ::placeholder{
+            color: springgreen;
+        }
+        .container:hover .box{
+            transition-delay: 0.5s;
+            transition-duration: 2s;
+            border-radius: 10px;
+            border: 2px solid aqua;
+        }
+        .container :hover .box .user input{
+            transition-delay: 0s;
+            transition-duration: 2s;
+            border: none;
+            border-bottom: 1px solid orange;
+            background-color: rgba(255,255,255,0)
+        }
+        .container :hover .box .pass input{
+            transition-delay: 0s;
+            transition-duration: 2s;
+            border: none;
+            border-bottom: 1px solid orange;
+            background-color: rgba(255,255,255,0)
+        }
+        .container:hover h1{
+            transition-delay: 0s;
+            transition-duration: 2s;
+            color: darkorange;
+            transform: scale(1.5); 
+       }
+       .container:hover .button button{
+        transition-delay: 0s;
+        transition-duration: 2s;
+        padding: 0 60px;
+        border-radius: 10px;
+        background-color: rgba(255,255,255,0);
+        border-color: white;
+        color: tomato;
+       }
+       /* .container:hover .box{
+        transition-delay: 1s;
+        transition-duration: 3s;
+        background-image: url(mountain.jpg);
+        background-size: cover;
+        background-color: rgba(255,255,255,0);
+       } */
+       .text p{
+        color: beige;
+       }
+       .text p a{
+        text-decoration: none;
+        color: deepskyblue;
+       }
+       .square{
+        width: 70px;
+        height: 4px;
+        background-color: blue;
+        border-radius: 5px;
+       }
+       .container:hover .left .square{
+        transition-delay: 0s;
+        transition-duration: 4s;
+        transform: translate(206vh);
+       }
+       .line{
+        width: 4px;
+        height: 70px;
+        background-color: aqua;
+       }
+       .container:hover .left .line{
+        transition-delay: 0s;
+        transition-duration: 4s;
+        transform: translateY(632px);
+       }
+       .line1{
+        width: 4px;
+        height: 70px;
+        background-color: red;
+        position: absolute;
+        top: 0%;
+        left: 120;
+        bottom: 0%;
+        right: 0%;
+       }
+       .container:hover .left .line1{
+        transition-delay: 0s;
+        transition-duration: 4s;
+        transform: translateY(632px);
+
+       }
+       .line2{
+        width: 70px;
+        height: 4px;
+        background-color: pink;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0%;
+       }
+       .container:hover .left .line2{
+        transition-delay: 0s;
+        transition-duration: 4s;
+        transform: translate(206vh);
+       }
+       .left{
+        background-image: url(mountain.jpg);
+        background-size: cover;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="square"></div>
+            <div class="line"></div>
+            <div class="line1"></div>
+            <div class="line2"></div>
+        </div>
+         <div class="right">
+            <div class="box">
+                 <div class="title"><h1>Login</h1></div>
+                  
+                 <div class="user">
+                   <a href=""><i class="fa-regular fa-user"></i></a>
+                   <input type="text" name="" id="" placeholder="Username">
+                 </div>
+
+                 <div class="pass">
+                   <a href=""><i class="fa-solid fa-lock"></i></a>
+                   <input type="text" name="" id="" placeholder="Password">
+                 </div>
+
+                 <div class="button">
+                   <button type="submit">Login</button>
+                 </div>
+                 <div class="text">
+                    <p>New user?<a href="signup.html">create an account</a></p>
+                 </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
